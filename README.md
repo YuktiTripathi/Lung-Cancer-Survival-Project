@@ -2,7 +2,7 @@
 
 Lung Cancer Survival Prediction
 
-##Project Overview
+*Project Overview*
 
 This repository contains a comprehensive project focused on survival prediction for lung cancer patients using statistical, machine learning (ML), and deep learning (DL) approaches. The study utilizes the National Lung Screening Trial (NLST) dataset to compare the performance of various models, including Cox Proportional Hazards (CoxPH), Random Survival Forests (RSF), XGBoost, DeepSurv, DeepHit, and a Transformer-augmented DeepSurv architecture. An ensemble model combining DL outputs is also explored to enhance predictive accuracy.
 
