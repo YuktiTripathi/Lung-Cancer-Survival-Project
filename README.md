@@ -1,12 +1,12 @@
 # Lung-Cancer-Survival-Project
 
-Lung Cancer Survival Prediction
+**Lung Cancer Survival Prediction**
 
-*Project Overview*
+***Project Overview***
 
 This repository contains a comprehensive project focused on survival prediction for lung cancer patients using statistical, machine learning (ML), and deep learning (DL) approaches. The study utilizes the National Lung Screening Trial (NLST) dataset to compare the performance of various models, including Cox Proportional Hazards (CoxPH), Random Survival Forests (RSF), XGBoost, DeepSurv, DeepHit, and a Transformer-augmented DeepSurv architecture. An ensemble model combining DL outputs is also explored to enhance predictive accuracy.
 
-The project aims to:
+**The project aims to:**
 
 Investigate survival dynamics in lung cancer patients.
 
@@ -16,10 +16,9 @@ Compare traditional statistical models with ML and DL techniques for predictive 
 
 Provide actionable insights for clinical decision-making through robust survival analysis and visualizations.
 
-Dataset
+**Dataset**
 
 The analysis is based on a curated subset of the NLST dataset, comprising clinical and survival data for 2,150 lung cancer patients. Key features include:
-
 
 Patient demographics (age, gender, smoking history)
 Tumor characteristics (lesion size, clinical staging, pathology)
@@ -28,7 +27,7 @@ Screening and outcome data
 
 The dataset was preprocessed to handle missing values, normalize features, and perform feature selection to optimize model performance.
 
-Models Implemented
+**Models Implemented**
 
 The following models were developed and evaluated
 
@@ -46,7 +45,7 @@ DeepSurv Transformer: A transformer-based architecture for capturing complex fea
 
 Ensemble Model: Combines predictions from DeepSurv, DeepHit, DeepSurv Transformer, and SurvNet for improved robustness.
 
-Methodology
+**Methodology**
 
 Data Preprocessing: Handled missing values using median imputation, normalized features, and conducted correlation analysis for feature selection.
 
@@ -54,12 +53,12 @@ Exploratory Data Analysis (EDA): Generated Kaplan-Meier survival curves, correla
 
 Model Training: Models were trained on 80% of the data, with 20% reserved for testing. Hyperparameters were tuned for optimal performance.
 
-Evaluation Metrics:
+**Evaluation Metrics:**
 Concordance Index (C-Index): Measures discriminatory power (ability to rank survival times).
 Brier Score and Integrated Brier Score (IBS): Assesses calibration and prediction accuracy over time.
 ROC-AUC: Evaluates classification performance at specific time points.
 
-Requirements
+**Requirements**
 
 Python 3.8+
 Libraries: lifelines, scikit-survival, pytorch, numpy, pandas, matplotlib, seaborn, scikit-learn
