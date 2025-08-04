@@ -1,66 +1,46 @@
-# Lung-Cancer-Survival-Project
+🔬 Lung Cancer Survival Prediction: A Comprehensive Study
+Project Overview 🚀
+This project is a deep dive into lung cancer survival prediction, comparing a range of statistical and machine learning models. Using the National Lung Screening Trial (NLST) dataset, we explore how various factors—from patient demographics to tumor characteristics—influence survival outcomes.
 
-**Lung Cancer Survival Prediction**
+Our goal is to create robust, predictive models that can provide valuable insights for clinical decision-making. 🩺
 
-***Project Overview***
+Key Features & Objectives 🎯
+Survival Dynamics: Uncover the key factors driving survival rates in lung cancer patients.
+Model Comparison: Evaluate and benchmark classic statistical models like CoxPH against modern Machine Learning (ML) and Deep Learning (DL) techniques.
+Advanced Architectures: Implement advanced models, including Transformer-augmented DeepSurv, to capture complex, non-linear relationships in the data.
+Ensemble Power: Develop a powerful ensemble model to combine the strengths of multiple DL models for superior predictive accuracy. 💪
+Actionable Insights: Translate complex survival analysis into clear, practical visualizations and conclusions.
+Data at a Glance 📊
+The analysis is based on a curated subset of the NLST dataset, which includes data from 2,150 lung cancer patients. This dataset is rich with features that provide a holistic view of each patient:
+Patient Demographics: Age, gender, and smoking history.
+Tumor Characteristics: Lesion size, clinical staging, and pathology.
+Time-to-Event Data: Detailed information on days to diagnosis and cancer-free days.
+The data was meticulously preprocessed, with techniques like median imputation for missing values and feature selection to ensure optimal model performance. ✨
 
-This repository contains a comprehensive project focused on survival prediction for lung cancer patients using statistical, machine learning (ML), and deep learning (DL) approaches. The study utilizes the National Lung Screening Trial (NLST) dataset to compare the performance of various models, including Cox Proportional Hazards (CoxPH), Random Survival Forests (RSF), XGBoost, DeepSurv, DeepHit, and a Transformer-augmented DeepSurv architecture. An ensemble model combining DL outputs is also explored to enhance predictive accuracy.
+Models Implemented 🤖
+This project isn't just about one model—it's a comprehensive comparison. Here’s a quick rundown of the models we built and evaluated:
 
-**The project aims to:**
-
-Investigate survival dynamics in lung cancer patients.
-
-Identify significant clinical, demographic, and tumor-related factors influencing survival outcomes.
-
-Compare traditional statistical models with ML and DL techniques for predictive performance.
-
-Provide actionable insights for clinical decision-making through robust survival analysis and visualizations.
-
-**Dataset**
-
-The analysis is based on a curated subset of the NLST dataset, comprising clinical and survival data for 2,150 lung cancer patients. Key features include:
-
-Patient demographics (age, gender, smoking history)
-Tumor characteristics (lesion size, clinical staging, pathology)
-Time-to-event variables (days to diagnosis, cancer-free days)
-Screening and outcome data
-
-The dataset was preprocessed to handle missing values, normalize features, and perform feature selection to optimize model performance.
-
-**Models Implemented**
-
-The following models were developed and evaluated
-
-Cox Proportional Hazards (CoxPH): A traditional statistical model for survival analysis.
-
-Random Survival Forests (RSF): A tree-based ensemble method for handling censored data.
-
-XGBoost: A gradient boosting framework adapted for survival prediction.
-
-DeepSurv: A neural network extension of CoxPH for modeling non-linear relationships.
-
-DeepHit: A DL model that directly estimates survival distributions without proportional hazards assumptions.
-
-DeepSurv Transformer: A transformer-based architecture for capturing complex feature interactions.
-
-Ensemble Model: Combines predictions from DeepSurv, DeepHit, DeepSurv Transformer, and SurvNet for improved robustness.
-
-**Methodology**
-
-Data Preprocessing: Handled missing values using median imputation, normalized features, and conducted correlation analysis for feature selection.
-
-Exploratory Data Analysis (EDA): Generated Kaplan-Meier survival curves, correlation heatmaps, and pairwise scatterplots to explore data distributions and relationships.
-
-Model Training: Models were trained on 80% of the data, with 20% reserved for testing. Hyperparameters were tuned for optimal performance.
-
-**Evaluation Metrics:**
-Concordance Index (C-Index): Measures discriminatory power (ability to rank survival times).
-Brier Score and Integrated Brier Score (IBS): Assesses calibration and prediction accuracy over time.
+Model	Type	Key Features
+Cox Proportional Hazards (CoxPH)	Traditional Statistics	A classic model for survival analysis.
+Random Survival Forests (RSF)	ML (Ensemble)	Handles censored data with a tree-based approach.
+XGBoost	ML (Gradient Boosting)	A powerful gradient boosting framework adapted for survival prediction.
+DeepSurv	Deep Learning	A neural network extension of CoxPH that can capture non-linear relationships.
+DeepHit	Deep Learning	Directly estimates survival distributions without proportional hazards assumptions.
+DeepSurv Transformer	Deep Learning (Advanced)	A transformer-based architecture designed to model complex feature interactions.
+Ensemble Model	Hybrid	Combines predictions from multiple DL models for enhanced robustness. 🤝
+Evaluation & Results ✅
+To ensure a fair and thorough comparison, we used a range of industry-standard metrics to evaluate each model's performance:
+Concordance Index (C-Index): Measures the model's ability to rank survival times correctly.
+Integrated Brier Score (IBS): Assesses prediction accuracy over time.
 ROC-AUC: Evaluates classification performance at specific time points.
+(Optional: Insert a table or a small plot here showing the results. For example, a simple bar chart of the C-Index for each model would be very effective.)
 
-**Requirements**
-
-Python 3.8+
-Libraries: lifelines, scikit-survival, pytorch, numpy, pandas, matplotlib, seaborn, scikit-learn
-
-
+Getting Started 🚀
+Curious to see the code? It's all here. To run this project locally, follow these steps:
+Clone the repository:
+git clone https://github.com/your-username/your-repo-name.git
+Navigate to the project directory:
+cd your-repo-name
+Install the required libraries:
+pip install -r requirements.txt
+The requirements.txt file contains a full list of dependencies, including lifelines, scikit-survival, pytorch, numpy, pandas, matplotlib, seaborn, and scikit-learn. 🐍
